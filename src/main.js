@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify';
 import VueYouTubeEmbed from 'vue-youtube-embed'
 // import firebase from 'firebase/app'
 // import 'firebase/firestore'
+require('./plugins/fontawesome');
 
 Vue.use(VueYouTubeEmbed)
 Vue.config.productionTip = false

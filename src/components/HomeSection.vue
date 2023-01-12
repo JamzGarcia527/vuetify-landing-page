@@ -1,15 +1,15 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/img/bgHero.jpg" height="750">
+    <v-parallax dark src="@/assets/img/telecommunications-tower-5612645_1920.jpg" height="750">
       <v-row align="center" justify="center">
-        <v-col cols="10">
+        <v-col cols="11">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Vuetify.js</h1>
-              <h1 class="font-weight-light">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing elit. Maiores porro voluptatibus <br />
-                delectus nam optio harum!
+              <h4 class="display-2 font-weight-bold mb-4" style="color: #FFF;">Maxcom Telecomunicaciones</h4>
+              <h1 class="font-weight-bold" style="color: #FFF;">
+                
+                Somos un equipo de profesionales <br /> certificados capaces de materializar <br /> cualquier proyecto independientemente <br /> de su complejidad.
+
               </h1>
               <v-btn
                 rounded
@@ -19,7 +19,7 @@
                 @click="$vuetify.goTo('#features')"
                 class="mt-5"
               >
-                Saiba mais
+                Más Información
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
               </v-btn>
               <div class="video d-flex align-center py-4">
@@ -62,7 +62,7 @@
                     />
                   </svg>
                 </a>
-                <p class="subheading ml-2 mb-0">Assista o vídeo</p>
+                <p class="subheading ml-2 mb-0">Ver vídeo</p>
               </div>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
@@ -114,7 +114,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-dialog v-model="dialog" max-width="640px">
+    <v-dialog v-model="dialog" max-width="440px">
       <v-card>
         <youtube
           :video-id="videoId"
@@ -123,9 +123,15 @@
         ></youtube>
       </v-card>
     </v-dialog>
-    <div class="svg-border-waves">
-      <img src="~@/assets/img/wave2.svg" />
-    </div>
+    
+    <a href="https://wa.link/4em9xt" class="float" target="_blank">
+      <v-spacer></v-spacer>
+      <v-icon
+        large
+      >
+        mdi-whatsapp
+      </v-icon>
+    </a>
   </section>
 </template>
 
@@ -134,22 +140,22 @@ export default {
   data() {
     return {
       dialog: false,
-      videoId: "i8IvvHJssWE",
+      videoId: "_-Vo7tBuWUw",
       features: [
         {
           img: require("@/assets/img/icon2.png"),
-          title: "Design Limpo",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Tecnología",
+          text: "La más avanzada infraestructura para garantizar un servicio excelente.",
         },
         {
           img: require("@/assets/img/icon1.png"),
-          title: "Dados Seguros",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Operabilidad",
+          text: "MAXCOM TELECOMUNICACIONES lleva operando como una destacada empresa contratista desde sus inicios en el año 2018.",
         },
         {
           img: require("@/assets/img/icon3.png"),
-          title: "Código Aberto",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Servicio",
+          text: "nuestros clientes son nuestra máxima prioridad y no descansamos hasta lograr su entera satisfacción.",
         },
       ],
     };
@@ -295,5 +301,29 @@ export default {
 <style>
 section {
   position: relative;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:35px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  margin-bottom: 35px;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
 }
 </style>

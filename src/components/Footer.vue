@@ -15,14 +15,13 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-        Mauris cursus commodo interdum.
+        Es una compañía contratista de alta reputación en Ciudad San Pedro de Urabá. Desde Nuestro inicio de operaciones, usamos un enfoque integral en todo proyecto, ofreciendo una amplia variedad de servicios para todo tipo de necesidades. 
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Calango WEB</strong>
+        {{ new Date().getFullYear() }} — <strong><a href="https://www.facebook.com/kcahzmaj" target="_blank">Desarrollado por Jamz Garcia Development WEB</a></strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -40,19 +39,19 @@ export default {
     icons: [
       {
         text: "mdi-facebook",
-        link: "",
+        link: "https://www.facebook.com/profile.php?id=100064015896229",
       },
       {
         text: "mdi-twitter",
-        link: "",
+        link: "https://twitter.com/MaxcomTelecomu1",
       },
       {
-        text: "mdi-linkedin",
-        link: "",
+        text: "mdi-youtube",
+        link: "https://www.youtube.com/channel/UCNrnRunHEYm681GPu24VDwQ/featured",
       },
       {
         text: "mdi-instagram",
-        link: "https://instagram.com/joabson_arley/",
+        link: "https://www.instagram.com/MaxcomTelecomunicaciones/",
       },
     ],
   }),

@@ -5,20 +5,19 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contate-nos</h1>
+              <h1 class="font-weight-light display-1">Contactenos</h1>
               <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                explicabo commodi quisquam asperiores dolore ad enim provident
-                veniam perferendis voluptate, perspiciatis.
+                
+                Somos un equipo de profesionales certificados capaces de materializar 
+                cualquier proyecto independientemente de su complejidad.
+
               </h3>
-              <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+              <h3 class="font-weight-bold mt-3">
+                Whats App <a :href="link" target="_blank">+57 3177450782</a>
+                
               </h3>
-              <h3 class="font-weight-light mt-3">
-                Telefone: +xx (xx) xxxxx-xxxx
-              </h3>
-              <h3 class="font-weight-light">
-                Email: email@email.com
+              <h3 class="font-weight-bold">
+                Email: maxcomt27@gmail.com
               </h3>
             </v-col>
             <v-col cols="12" sm="7">
@@ -26,7 +25,7 @@
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
-                    label="Nome"
+                    label="Nombre"
                     required
                 ></v-text-field>
 
@@ -40,7 +39,7 @@
                 <v-textarea
                     v-model="textArea"
                     :rules="textAreaRules"
-                    label="Mensagem"
+                    label="Mensaje"
                     required
                 />
 
@@ -103,6 +102,7 @@
 </style>
 
 <script>
+import swal from 'sweetalert';
 // import {db} from '@/main'
 
 export default {
@@ -111,17 +111,18 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "O campo nome é obrigatório",
-      (v) => (v && v.length >= 6) || "O nome precisa ter mais de 6 caracteres",
+      (v) => !!v || "El nombre es obligatório",
+      (v) => (v && v.length >= 6) || "El nombre debe contener mínimo 6 caracteres",
     ],
+    link: 'https://wa.link/4em9xt',
     email: "",
     emailRules: [
-      (v) => !!v || "O campo email é obrigatório",
-      (v) => /.+@.+\..+/.test(v) || "O E-mail precisa ser válido",
+      (v) => !!v || "El campo email es obligatório",
+      (v) => /.+@.+\..+/.test(v) || "Ingrese un e-mail válido",
     ],
     textArea: "",
     textAreaRules: [
-      (v) => !!v || "O campo de texto é obrigatório",
+      (v) => !!v || "La descripción del mensaje es obrlgatória",
       (v) => (v && v.length >= 10) || "Mínimo de 10 caracteres",
     ],
     lazy: false,
@@ -133,6 +134,10 @@ export default {
   }),
   methods: {
     submit() {
+      alert("Mensaje enviado correctamente")
+      this.name = ''
+      this.email = ''
+      this.textArea = ''
       /*db.collection("contactData").add({
         name: this.name,
         email: this.email,

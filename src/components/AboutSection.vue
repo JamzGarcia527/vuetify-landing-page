@@ -5,52 +5,50 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="7">
-              <h1 class="font-weight-light display-2">Sobre</h1>
-              <h1 class="font-weight-light display-1 mb-3">
-                Lorem ipsum dolor!
-              </h1>
+              <h1 class="font-weight-light display-2 text-center">Quienes Somos</h1>
+              <hr />
               <v-row>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/icon1.svg"
+                    src="@/assets/img/history-log-manuscript-svgrepo-com.svg"
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <p class="text-justify mt-3">
+                    Maxcom Telecomunicaciones es una compañía contratista de alta reputación en Ciudad San Pedro de Urabá. 
+                    Desde Nuestro inicio de operaciones, usamos un enfoque integral en todo proyecto, 
+                    ofreciendo una amplia variedad de servicios para todo tipo de necesidades. 
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/icon2.svg"
+                    src="@/assets/img/goal-success-svgrepo-com.svg"
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <p class="text-justify ">
+                    Misión: <br />
+                    Ofrecer a nuestros clientes los mejores productos con la más reciente tecnología. <br />
+                    Visión: <br />
+                    Ser la mejor empresa en tecnología del país.
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/icon3.svg"
+                    src="@/assets/img/vision-svgrepo-com.svg"
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <p class="text-justify ">
+                    Visión: <br />
+                    Ser la mejor empresa en tecnología del país.
                   </p>
                 </v-col>
               </v-row>
             </v-col>
             <v-col cols="12" md="5" class="d-none d-md-flex">
               <v-img
-                src="@/assets/img/ill1.svg"
+                src="@/assets/img/satellite-2528833.jpg"
                 class="d-block ml-auto mr-auto"
                 max-width="400px"
               />
