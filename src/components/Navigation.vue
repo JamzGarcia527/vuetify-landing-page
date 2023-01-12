@@ -10,7 +10,7 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/logo_maxcom.jpg" alt="Logo" />
+            <img src="@/assets/img/logo_maxcom-removebg-preview.png" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">Maxcom </v-list-item-title>
@@ -49,7 +49,7 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo_maxcom.jpg" max-width="180px" />
+        <v-img src="@/assets/img/logo_maxcom-removebg-preview.png" width="380px" class="mt-5" />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
