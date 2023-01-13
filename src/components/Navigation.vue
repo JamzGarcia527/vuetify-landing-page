@@ -18,6 +18,16 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-btn
+          v-for="(icon, i) in icons"
+          :key="i"
+          class="mx-3 mb-3 black--text"
+          :href="icon.link"
+          target="_blank"
+          icon
+        >
+        <v-icon size="35px">{{ icon.text }}</v-icon>
+      </v-btn>
 
       <v-divider />
 
@@ -65,14 +75,25 @@
           <span class="mr-2">Quienes Somos</span>
         </v-btn>
         <v-btn rounded outlined text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Nuestros Servicios</span>
+          <span class="mr-2">Servicios</span>
         </v-btn>
         <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
           <span class="mr-2">Contactenos</span>
         </v-btn>
+        <v-btn
+          v-for="(icon, i) in icons"
+          :key="i"
+          class="mx-0.5 black--text"
+          :href="icon.link"
+          target="_blank"
+          icon
+        >
+        <v-icon size="35px">{{ icon.text }}</v-icon>
+      </v-btn>
       </div>
     </v-app-bar>
   </div>
+  
 </template>
 
 <style scoped>
@@ -89,6 +110,24 @@
 <script>
 export default {
   data: () => ({
+    icons: [
+      {
+        text: "mdi-facebook",
+        link: "https://www.facebook.com/profile.php?id=100064015896229",
+      },
+      {
+        text: "mdi-twitter",
+        link: "https://twitter.com/MaxcomTelecomu1",
+      },
+      {
+        text: "mdi-youtube",
+        link: "https://www.youtube.com/channel/UCNrnRunHEYm681GPu24VDwQ/featured",
+      },
+      {
+        text: "mdi-instagram",
+        link: "https://www.instagram.com/MaxcomTelecomunicaciones/",
+      },
+    ],
     drawer: null,
     isXs: false,
     items: [
@@ -131,5 +170,11 @@ export default {
 .v-btn {
   background-color: white !important;
   margin-left: 2px;
+}
+.v-btn--icon.v-size--default .v-icon, .v-btn--fab.v-size--default .v-icon {
+  height: 24px;
+  font-size: 24px;
+  width: 24px;
+  color: black;
 }
 </style>

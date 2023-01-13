@@ -5,7 +5,6 @@
         <v-col cols="11">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h4 class="display-2 font-weight-bold mb-4" style="color: #FFF;">Maxcom Telecomunicaciones</h4>
               <h1 class="font-weight-bold" style="color: #FFF;">
                 
                 Somos un equipo de profesionales <br /> certificados capaces de materializar <br /> cualquier proyecto independientemente <br /> de su complejidad.
