@@ -298,7 +298,7 @@
                           <v-btn
                             color="primary"
                             text
-                            @click="closeModalCableData()"
+                            @click="closeModalAccessPoint()"
                           >
                             Cerrar
                           </v-btn>
@@ -610,7 +610,7 @@ export default {
     closeModalCableData() {
       this.dialogCableData = false;
     },
-    closeModalCableData() {
+    closeModalAccessPoint() {
       this.dialogAccessPoint = false;
     },
     closeModalIntBandaAncha() {

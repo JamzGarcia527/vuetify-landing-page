@@ -27,12 +27,10 @@
                     class="mr-4"
                   />
                   <p class="text-justify ">
-                    Misión: <br />
-                    Ofrecer a nuestros clientes los mejores productos con la más reciente tecnología. <br />
-                    Visión: <br />
-                    Ser la mejor empresa en tecnología del país.
+                    Misión: Ofrecer a nuestros clientes los mejores productos con la más reciente tecnología. <br />
                   </p>
                 </v-col>
+                
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
                     src="@/assets/img/vision-svgrepo-com.svg"
@@ -40,8 +38,7 @@
                     class="mr-4"
                   />
                   <p class="text-justify ">
-                    Visión: <br />
-                    Ser la mejor empresa en tecnología del país.
+                    Visión: Ser la mejor empresa en tecnología del país.
                   </p>
                 </v-col>
               </v-row>
