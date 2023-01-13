@@ -49,7 +49,7 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo_maxcom-removebg-preview.png" width="380px" class="mt-5" />
+        <v-img src="@/assets/img/logo_maxcom-removebg-preview.png" width="190px" style="margin-top: 2px;" />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
@@ -58,13 +58,13 @@
         v-if="isXs"
       />
       <div v-else>
-        <v-btn text @click="$vuetify.goTo('#hero')">
+        <v-btn rounded outlined text @click="$vuetify.goTo('#hero')">
           <span class="mr-2">Inicio</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#features')">
+        </v-btn> 
+        <v-btn rounded outlined text @click="$vuetify.goTo('#features')">
           <span class="mr-2">Quienes Somos</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
+        <v-btn rounded outlined text @click="$vuetify.goTo('#pricing')">
           <span class="mr-2">Nuestros Servicios</span>
         </v-btn>
         <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
@@ -123,3 +123,13 @@ export default {
   },
 };
 </script>
+<style scoped>
+.v-btn__content span{
+  color: black !important;
+}
+
+.v-btn {
+  background-color: white !important;
+  margin-left: 2px;
+}
+</style>
