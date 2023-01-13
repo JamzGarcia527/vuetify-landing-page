@@ -49,7 +49,7 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo_maxcom-removebg-preview.png" width="190px" style="margin-top: 2px;" />
+        <v-img src="@/assets/img/logo_maxcom-removebg-preview.png" width="280px" style="margin-top: 2px;" />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
