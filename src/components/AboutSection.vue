@@ -22,7 +22,8 @@
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/goal-success-svgrepo-com.svg"
+                    src="@/assets/img/goal-success-svgrepo-com.svg" 
+                    
                     max-width="60px"
                     class="mr-4"
                   />
